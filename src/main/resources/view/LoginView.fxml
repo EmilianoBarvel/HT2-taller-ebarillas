@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.auratheria.auratheriaformulario.auratheriagames.controller.LoginController"
+            stylesheets="@../css/styles.css"
+            styleClass="root-pane"
+            prefWidth="480.0" prefHeight="560.0">
+
+    <center>
+        <VBox alignment="CENTER" spacing="16" styleClass="login-card" maxWidth="340.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+
+            <ImageView fitWidth="64" fitHeight="64" preserveRatio="true">
+                <Image url="@../images/logo.png"/>
+            </ImageView>
+            <Label text="AURATHERIA GAMES" styleClass="brand-title"/>
+            <Label text="Inicia sesión para continuar" styleClass="subtitle"/>
+
+            <VBox spacing="6">
+                <Label text="Usuario" styleClass="field-label"/>
+                <TextField fx:id="txtUsuario" promptText="Ingresa tu usuario"/>
+            </VBox>
+
+            <VBox spacing="6">
+                <Label text="Contraseña" styleClass="field-label"/>
+                <PasswordField fx:id="txtPassword" promptText="Ingresa tu contraseña"/>
+            </VBox>
+
+            <Button text="Ingresar" onAction="#handleIngresar" styleClass="btn-primary" maxWidth="Infinity"/>
+
+            <Hyperlink text="¿No tienes cuenta? Crear cuenta" onAction="#handleCrearCuenta" styleClass="link"/>
+        </VBox>
+    </center>
+
+</BorderPane>

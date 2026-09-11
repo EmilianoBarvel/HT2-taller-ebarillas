@@ -1,0 +1,165 @@
+
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom right, #0f0f1a, #1b1030);
+}
+
+.login-card {
+    -fx-background-color: #171526;
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(124, 58, 237, 0.45), 25, 0.2, 0, 6);
+}
+
+.brand-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #22d3ee;
+    -fx-letter-spacing: 1.5px;
+}
+
+.brand-title-small {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #22d3ee;
+}
+
+.subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #9ca3af;
+}
+
+.field-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #c4b5fd;
+    -fx-font-weight: bold;
+}
+
+.text-field, .password-field, TextField, PasswordField {
+    -fx-background-color: #0f0f1a;
+    -fx-text-fill: #f3f4f6;
+    -fx-prompt-text-fill: #6b7280;
+    -fx-background-radius: 8;
+    -fx-border-color: #3730a3;
+    -fx-border-radius: 8;
+    -fx-padding: 8 10 8 10;
+}
+
+.text-field:focused, .password-field:focused, TextField:focused, PasswordField:focused {
+    -fx-border-color: #22d3ee;
+}
+
+.btn-primary {
+    -fx-background-color: linear-gradient(to right, #7c3aed, #22d3ee);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 10 18 10 18;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-opacity: 0.9;
+}
+
+.btn-secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c4b5fd;
+    -fx-border-color: #7c3aed;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10 18 10 18;
+    -fx-cursor: hand;
+}
+
+.link {
+    -fx-text-fill: #22d3ee;
+    -fx-font-size: 12px;
+}
+
+/* ---------- Dashboard ---------- */
+.topbar {
+    -fx-background-color: #171526;
+    -fx-border-color: transparent transparent #2d2a4a transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.sidebar {
+    -fx-background-color: #14121f;
+}
+
+.btn-nav {
+    -fx-background-color: transparent;
+    -fx-text-fill: #d1d5db;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 12 10 12;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.btn-nav:hover {
+    -fx-background-color: #241f3d;
+    -fx-text-fill: #22d3ee;
+}
+
+.btn-nav-danger {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f87171;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 12 10 12;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.btn-nav-danger:hover {
+    -fx-background-color: #3b1f1f;
+}
+
+.content-area {
+    -fx-background-color: #0f0f1a;
+}
+
+/* ---------- Catalogo de Videojuegos ---------- */
+.combo-box, ComboBox {
+    -fx-background-color: #0f0f1a;
+    -fx-background-radius: 8;
+    -fx-border-color: #3730a3;
+    -fx-border-radius: 8;
+}
+
+.combo-box .list-cell, .combo-box .text-field {
+    -fx-background-color: #0f0f1a;
+    -fx-text-fill: #f3f4f6;
+}
+
+.table-view {
+    -fx-background-color: #171526;
+    -fx-background-radius: 10;
+    -fx-border-color: #2d2a4a;
+    -fx-border-radius: 10;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #241f3d;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #22d3ee;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #171526;
+    -fx-text-fill: #f3f4f6;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #1b1830;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #3730a3;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #f3f4f6;
+}

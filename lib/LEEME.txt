@@ -1,0 +1,11 @@
+Coloca aquí (dentro de esta carpeta "lib"):
+
+1. La carpeta descomprimida del JavaFX SDK 21, por ejemplo:
+   lib/javafx-sdk-21.0.2/lib/javafx-controls.jar (y los demás .jar de javafx)
+
+2. El .jar del conector de MySQL, por ejemplo:
+   lib/mysql-connector-j-9.1.0.jar
+
+Ver el README.md en la raíz del proyecto (sección 2) para los enlaces de descarga.
+Si el nombre de tu carpeta/archivo es distinto, ajusta las rutas en
+nbproject/project.properties (líneas que empiezan con "file.reference.").
